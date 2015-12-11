@@ -102,7 +102,7 @@ class AnalysisBase(object):
         
         if name_or_instance in cls._builtins and not type:
             if kwargs:
-                raise ValueError('Builtin %s doesn\'t accept any parameters.' & cls.__name__)
+                raise ValueError('Builtin %s doesn\'t accept any parameters.' % cls.__name__)
             type = 'builtin'
 
         # for analyzers
